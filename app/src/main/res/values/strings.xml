@@ -1,0 +1,13 @@
+<resources>
+    <string name="nombreapp">VideoPlay</string>
+    <string name="minombre">Juan Pablo Molina Peña</string>
+    <string name="registro">Registrate</string>
+    <string name="comienza">Comienza</string>
+    <string name="ingresa">Ingresa</string>
+    <string name="recupera_contrasena">Recupera Tu Contraseña</string>
+    <string name="nueva_aventura">Inicia una nueva aventura con VideoPlay y descubre una nueva forma de ver el mundo</string>
+    <string name="aventura">La aventura esta por iniciar, por favor inicia sesion</string>
+    <string name="ingresa_google">Ingresa con Google</string>
+    <string name="no_cuenta">No tienes cuenta?</string>
+    <string name="recucontra">Para recuperar la contraseña se necesita un correo previamente registrado</string>
+</resources>

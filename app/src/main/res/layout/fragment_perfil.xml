@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey">
+
+    <!-- Imagen de perfil -->
+
+    <!-- Contenedor de campos -->
+    <ImageView
+        android:id="@+id/perfil_editar"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="#0D2B5C"
+        android:contentDescription="Perfil"
+        android:scaleType="centerInside"
+        android:src="@drawable/user"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/contenedorCampos"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/redondeo_central"
+        android:orientation="vertical"
+        android:padding="20dp"
+        app:layout_constraintTop_toBottomOf="@id/perfil_editar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Nombres -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/user" />
+
+            <EditText
+                android:id="@+id/nombre_apellido"
+                style="@style/EditTextRounded"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:hint="Nombres"
+                android:inputType="textPersonName"
+                android:focusable="false"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <!-- Correo -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/mail" />
+
+            <EditText
+                android:id="@+id/email"
+                style="@style/EditTextRounded"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:hint="Correo"
+                android:inputType="textEmailAddress"
+                android:focusable="false"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <!-- Teléfono -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/phone" />
+
+            <EditText
+                android:id="@+id/numerocel"
+                style="@style/EditTextRounded"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:hint="Teléfono"
+                android:inputType="phone"
+                android:focusable="false"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Botón Editar -->
+
+    <!-- Botón Cerrar sesión -->
+    <Button
+        android:id="@+id/editarperfil"
+        android:layout_width="250dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/Dark_blue"
+        android:fontFamily="@font/abeezee"
+        android:text="Editar"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/contenedorCampos" />
+
+    <Button
+        android:id="@+id/cerrar_sesion"
+        android:layout_width="250dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/Dark_blue"
+        android:fontFamily="@font/abeezee"
+        android:text="Cerrar sesión"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editarperfil" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

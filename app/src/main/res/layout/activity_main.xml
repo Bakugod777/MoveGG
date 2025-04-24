@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    tools:context=".activities.MainActivity">
+
+    <!-- Guideline vertical al 85% para separar contenido de botones -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.85" />
+
+    <!-- Fragment ocupa toda la parte superior -->
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragment_container"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/bottom_buttons" />
+
+    <!-- Contenedor inferior con botones -->
+    <LinearLayout
+        android:id="@+id/bottom_buttons"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/redondeo_parte_inferior"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="1dp"
+        android:weightSum="44"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <!-- Botón carrito -->
+        <ImageButton
+            android:id="@+id/btn_ver_carrito"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_margin="4dp"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:src="@drawable/cart"/>
+
+        <!-- Botón productos -->
+        <ImageButton
+            android:id="@+id/btn_ver_productos"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_margin="4dp"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:src="@drawable/store"/>
+
+        <!-- Botón usuario -->
+        <ImageButton
+            android:id="@+id/button"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_margin="4dp"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:src="@drawable/user"/>
+
+        <!-- Botón categorías -->
+        <ImageButton
+            android:id="@+id/btn_ver_categorias"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_margin="4dp"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:src="@drawable/category"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+
+
